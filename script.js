@@ -413,7 +413,7 @@ function handleAuditSubmit() {
 
   // Send to WhatsApp
   const message = `Hi Loopy Media, I want a FREE AUDIT.%0AName: ${encodeURIComponent(name.value)}%0APhone: ${encodeURIComponent(phone.value)}`;
-  window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+  window.open(`https://wa.me/919484882220?text=${message}`, '_blank');
 
   success.classList.add('show');
   name.value = ''; phone.value = '';

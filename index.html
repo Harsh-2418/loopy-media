@@ -3,26 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Loopy Media – Step into the Loop of Growth. Marketing Agency in Ahmedabad offering Websites, Social Media & Branding."/>
-  <title>Loopy Media – Step into the Loop of Growth</title>
+  <title>Loopy Media – Social Media Marketing Agency in Ahmedabad | Websites, Branding & Growth</title>
+  <meta name="description" content="Loopy Media is Ahmedabad's leading digital marketing agency. Website plans from ₹799/mo, Social Media from ₹1,999/mo. Free brand audit for clinics, restaurants, gyms & local businesses."/>
+  <meta name="keywords" content="social media marketing Ahmedabad, digital marketing agency Ahmedabad, website design Ahmedabad, Meta Ads agency, Instagram marketing, local business marketing Gujarat"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://loopymedia.in/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://loopymedia.in/"/>
+  <meta property="og:title" content="Loopy Media – Step into the Loop of Growth | Ahmedabad"/>
+  <meta property="og:description" content="Websites from ₹799/mo · Social Media from ₹1,999/mo · Free brand audit for local businesses in Ahmedabad."/>
+  <meta property="og:image" content="https://loopymedia.in/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Loopy Media – Marketing Agency Ahmedabad"/>
+  <meta name="twitter:description" content="Website & social media plans from ₹799/month. Free brand audit available."/>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MarketingAgency",
+    "name": "Loopy Media",
+    "url": "https://loopymedia.in",
+    "logo": "https://loopymedia.in/logo.png",
+    "description": "Digital marketing agency in Ahmedabad — website design from ₹799/mo, social media from ₹1,999/mo, Meta Ads from ₹4,999/mo.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN" },
+    "telephone": "+919484882220",
+    "email": "hello@loopymedia.in",
+    "sameAs": ["https://instagram.com/loopy_media_"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"How long does social media growth take?","acceptedAnswer":{"@type":"Answer","text":"Most clients see engagement improvements within 30 days. Leads and sales typically appear within 60–90 days."}},
+      {"@type":"Question","name":"Do you work with local businesses?","acceptedAnswer":{"@type":"Answer","text":"Yes — clinics, restaurants, gyms, cafes, and local businesses are our specialty."}},
+      {"@type":"Question","name":"What is the starting price for a website?","acceptedAnswer":{"@type":"Answer","text":"Website plans start from ₹799/month, which includes hosting, maintenance, and monthly updates."}},
+      {"@type":"Question","name":"Can I start with a small budget?","acceptedAnswer":{"@type":"Answer","text":"Yes. Social Media Starter plans begin at ₹1,999/month and website plans start at ₹799/month."}},
+      {"@type":"Question","name":"Do you run Meta Ads?","acceptedAnswer":{"@type":"Answer","text":"Yes. Digital marketing plans starting from ₹4,999/month include Meta Ads management."}}
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="./styles.css"/>
-  <!-- Calendly -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <meta name="google-site-verification" content="X2cZxEzYbvK49EIRUPl-InwTJg-uS8MWzOkoNJgKrpU" />
 </head>
 <body>
 
-  <!-- Custom Cursor -->
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- ═══════════════════════════════════════
-       NAVBAR
-  ═══════════════════════════════════════ -->
+  <!-- ═══ NAVBAR ═══ -->
   <nav id="navbar">
     <a href="#hero" class="nav-logo">
       <div class="logo-mark">
@@ -34,102 +73,88 @@
       </div>
       <span class="logo-text">LOOPY <span>MEDIA</span></span>
     </a>
-
     <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
-      <li><a href="#why">Why Us</a></li>
-      <li><a href="#quiz">Quiz</a></li>
-      <li><a href="#compare">Compare</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#industries">Industries</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact" class="nav-cta">Get Free Audit</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Free Audit</a></li>
     </ul>
-
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-
-    <!-- Animated line under navbar -->
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     <div class="nav-line"><div class="nav-line-fill" id="navLineFill"></div></div>
   </nav>
 
-  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
     <a href="#services" class="mob-link">Services</a>
-    <a href="#why" class="mob-link">Why Us</a>
-    <a href="#quiz" class="mob-link">Quiz</a>
-    <a href="#compare" class="mob-link">Compare</a>
-    <a href="#process" class="mob-link">Process</a>
-    <a href="#testimonials" class="mob-link">Testimonials</a>
+    <a href="#portfolio" class="mob-link">Portfolio</a>
+    <a href="#industries" class="mob-link">Industries</a>
     <a href="#pricing" class="mob-link">Pricing</a>
+    <a href="#quiz" class="mob-link">Find My Plan</a>
+    <a href="#blog" class="mob-link">Blog</a>
+    <a href="#faq" class="mob-link">FAQ</a>
     <a href="#contact" class="mob-cta">Get Free Audit →</a>
   </div>
 
-  <!-- ═══════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════ -->
+  <!-- ═══ HERO ═══ -->
   <section id="hero">
     <div class="hero-bg-rings">
-      <div class="ring ring-1"></div>
-      <div class="ring ring-2"></div>
-      <div class="ring ring-3"></div>
-      <div class="ring ring-4"></div>
+      <div class="ring ring-1"></div><div class="ring ring-2"></div>
+      <div class="ring ring-3"></div><div class="ring ring-4"></div>
     </div>
     <div class="hero-noise"></div>
-
     <div class="hero-content">
       <div class="hero-badge reveal">
         <span class="badge-dot"></span>
         Marketing Agency · Ahmedabad
       </div>
-
       <h1 class="hero-title reveal reveal-d1">
-        Step Into<br/>
-        The Loop<br/>
-        <span class="hero-title-accent">Of Growth.</span>
+        Step Into<br/>The Loop<br/><span class="hero-title-accent">Of Growth.</span>
       </h1>
-
       <p class="hero-sub reveal reveal-d2">
         We transform your brand into a <strong>sales engine</strong> through strategic websites,
         social media, and bold branding — built for results, not just looks.
       </p>
-
       <div class="hero-actions reveal reveal-d3">
         <a href="#contact" class="btn-primary">
-           Free Audit
+          Free Audit
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#services" class="btn-ghost">See Our Work</a>
+        <a href="#portfolio" class="btn-ghost">See Our Work</a>
+      </div>
+      <!-- Updated price anchors -->
+      <div class="hero-trust reveal reveal-d4">
+        <span>🌐 Websites from ₹799/mo</span>
+        <span>📱 Social Media from ₹1,999/mo</span>
+        <span>🎯 Ads from ₹4,999/mo</span>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       TICKER / MARQUEE
-  ═══════════════════════════════════════ -->
+  <!-- ═══ TICKER ═══ -->
   <div class="ticker-wrap">
     <div class="ticker-track">
-      <span>Websites</span><span class="ticker-dot">✦</span>
+      <span>Websites from ₹799/mo</span><span class="ticker-dot">✦</span>
       <span>Social Media</span><span class="ticker-dot">✦</span>
+      <span>Meta Ads</span><span class="ticker-dot">✦</span>
       <span>Branding</span><span class="ticker-dot">✦</span>
-      <span>Content Strategy</span><span class="ticker-dot">✦</span>
-      <span>Growth Marketing</span><span class="ticker-dot">✦</span>
-      <span>SEO</span><span class="ticker-dot">✦</span>
       <span>Reels &amp; Videos</span><span class="ticker-dot">✦</span>
       <span>Lead Generation</span><span class="ticker-dot">✦</span>
-      <span>Websites</span><span class="ticker-dot">✦</span>
-      <span>Social Media</span><span class="ticker-dot">✦</span>
-      <span>Branding</span><span class="ticker-dot">✦</span>
-      <span>Content Strategy</span><span class="ticker-dot">✦</span>
-      <span>Growth Marketing</span><span class="ticker-dot">✦</span>
       <span>SEO</span><span class="ticker-dot">✦</span>
+      <span>Growth Marketing</span><span class="ticker-dot">✦</span>
+      <span>Websites from ₹799/mo</span><span class="ticker-dot">✦</span>
+      <span>Social Media</span><span class="ticker-dot">✦</span>
+      <span>Meta Ads</span><span class="ticker-dot">✦</span>
+      <span>Branding</span><span class="ticker-dot">✦</span>
       <span>Reels &amp; Videos</span><span class="ticker-dot">✦</span>
       <span>Lead Generation</span><span class="ticker-dot">✦</span>
+      <span>SEO</span><span class="ticker-dot">✦</span>
+      <span>Growth Marketing</span><span class="ticker-dot">✦</span>
     </div>
   </div>
 
-  <!-- ═══════════════════════════════════════
-       SERVICES
-  ═══════════════════════════════════════ -->
+  <!-- ═══ SERVICES ═══ -->
   <section id="services">
     <div class="container">
       <div class="section-header">
@@ -137,83 +162,42 @@
         <h2 class="section-title">Services Built<br/>to <span>Drive Sales</span></h2>
         <p class="section-sub">Everything your brand needs to stand out, show up, and convert — under one loop.</p>
       </div>
-
       <div class="services-grid">
         <div class="service-card sc-featured reveal">
-          <div class="sc-icon">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="6" width="28" height="22" rx="3" stroke="currentColor" stroke-width="2"/><path d="M12 34H24M18 28V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
+          <div class="sc-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="6" width="28" height="22" rx="3" stroke="currentColor" stroke-width="2"/><path d="M12 34H24M18 28V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
           <h3>Website Design &amp; Development</h3>
-          <p>Custom, conversion-focused websites that load fast, look stunning, and turn visitors into customers.</p>
-          <ul class="sc-list">
-            <li>Landing Pages</li>
-            <li>E-Commerce</li>
-            <li>Portfolio Sites</li>
-            <li>SEO Optimization</li>
-          </ul>
-          <span class="sc-tag">Most Popular</span>
+          <p>Custom, conversion-focused websites that load fast, look stunning, and turn visitors into customers. Plans from ₹799/month.</p>
+          <ul class="sc-list"><li>Landing Pages</li><li>E-Commerce</li><li>Hospital Sites</li><li>SEO Optimization</li></ul>
+          <span class="sc-tag">From ₹799/mo</span>
         </div>
-
         <div class="service-card reveal reveal-d1">
-          <div class="sc-icon">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="4" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><rect x="19" y="4" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><rect x="4" y="19" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M19 25.5H32M25.5 19V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
+          <div class="sc-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect x="4" y="4" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><rect x="19" y="4" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><rect x="4" y="19" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M19 25.5H32M25.5 19V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
           <h3>Social Media Management</h3>
-          <p>Strategic content, consistent posting, and community management that grows your audience and trust.</p>
-          <ul class="sc-list">
-            <li>Instagram &amp; Facebook</li>
-            <li>Content Calendar</li>
-            <li>Reels &amp; Stories</li>
-            <li>Analytics Reports</li>
-          </ul>
+          <p>Strategic content, consistent posting, and community management that grows your audience and trust. Plans from ₹1,999/month.</p>
+          <ul class="sc-list"><li>Instagram &amp; Facebook</li><li>Reels &amp; Stories</li><li>Content Calendar</li><li>Analytics Reports</li></ul>
         </div>
-
         <div class="service-card reveal reveal-d2">
-          <div class="sc-icon">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4L22.5 13.5H32L24.5 19.5L27.5 29L18 23L8.5 29L11.5 19.5L4 13.5H13.5L18 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          </div>
+          <div class="sc-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M18 4L22.5 13.5H32L24.5 19.5L27.5 29L18 23L8.5 29L11.5 19.5L4 13.5H13.5L18 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
           <h3>Branding &amp; Identity</h3>
           <p>Logo, color palette, typography, and brand guidelines that make your business instantly recognizable.</p>
-          <ul class="sc-list">
-            <li>Logo Design</li>
-            <li>Brand Guidelines</li>
-            <li>Visual Identity</li>
-            <li>Brand Strategy</li>
-          </ul>
+          <ul class="sc-list"><li>Logo Design</li><li>Brand Guidelines</li><li>Visual Identity</li><li>Brand Strategy</li></ul>
         </div>
-
         <div class="service-card reveal reveal-d3">
-          <div class="sc-icon">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="2"/><path d="M18 10V18L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
+          <div class="sc-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="14" stroke="currentColor" stroke-width="2"/><path d="M18 10V18L23 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
           <h3>Content Creation</h3>
           <p>High-quality reels, graphics, and copywriting engineered to stop the scroll and spark action.</p>
-          <ul class="sc-list">
-            <li>Reel Production</li>
-            <li>Graphic Design</li>
-            <li>Copywriting</li>
-            <li>Store Shoots</li>
-          </ul>
+          <ul class="sc-list"><li>Reel Production</li><li>Graphic Design</li><li>Copywriting</li><li>Store Shoots</li></ul>
         </div>
-
         <div class="service-card reveal reveal-d4">
-          <div class="sc-icon">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 28L14 18L20 24L26 16L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="10" r="4" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h3>Paid Ads &amp; Lead Gen</h3>
-          <p>ROI-driven Meta and Google ad campaigns designed to fill your pipeline with qualified leads.</p>
-          <ul class="sc-list">
-            <li>Meta Ads</li>
-            <li>Google Ads</li>
-            <li>Retargeting</li>
-            <li>Funnel Building</li>
-          </ul>
+          <div class="sc-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M6 28L14 18L20 24L26 16L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="30" cy="10" r="4" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3>Digital Marketing &amp; Lead Gen</h3>
+          <p>ROI-driven Meta and Google ad campaigns designed to fill your pipeline with qualified leads. Plans from ₹4,999/month.</p>
+          <ul class="sc-list"><li>Meta Ads</li><li>Google Ads</li><li>Retargeting</li><li>Funnel Building</li></ul>
         </div>
-
         <div class="service-card sc-audit reveal reveal-d5">
           <div class="audit-inner">
             <h3>Free Brand Audit</h3>
-            <p>Not sure where to start? DM us "GROW" and we'll audit your brand for free — no strings attached.</p>
+            <p>Not sure where to start? Get a free audit — Instagram, website &amp; brand positioning reviewed at zero cost.</p>
             <a href="#contact" class="btn-primary btn-sm">Claim Free Audit →</a>
           </div>
         </div>
@@ -221,81 +205,119 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       WHY LOOPY MEDIA
-  ═══════════════════════════════════════ -->
+  <!-- ═══ WHY CHOOSE US — icon cards ═══ -->
+  <section id="why-choose" class="why-choose-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Why Us</span>
+        <h2 class="section-title">Why Businesses Choose<br/><span>Loopy Media</span></h2>
+        <p class="section-sub">We're not just another agency. Here's what makes us different.</p>
+      </div>
+      <div class="wc-grid">
+        <div class="wc-card reveal"><div class="wc-card-icon">💰</div><h4>Affordable Monthly Plans</h4><p>Websites from ₹799/mo, social media from ₹1,999/mo — world-class marketing without big-agency prices.</p></div>
+        <div class="wc-card reveal reveal-d1"><div class="wc-card-icon">⚡</div><h4>Fast Delivery</h4><p>48-hour turnaround on content. We move at startup speed so you never miss a moment.</p></div>
+        <div class="wc-card reveal reveal-d2"><div class="wc-card-icon">💬</div><h4>WhatsApp Support</h4><p>Direct access to your team on WhatsApp. No tickets, no delays — just real conversations.</p></div>
+        <div class="wc-card reveal reveal-d3"><div class="wc-card-icon">🎯</div><h4>Custom Strategy</h4><p>No cookie-cutter plans. Every strategy is built specifically around your business goals.</p></div>
+        <div class="wc-card reveal"><div class="wc-card-icon">🎨</div><h4>Creative Content</h4><p>Scroll-stopping visuals, reels, and copy crafted to grow your brand and attract customers.</p></div>
+        <div class="wc-card reveal reveal-d1"><div class="wc-card-icon">📊</div><h4>Transparent Reporting</h4><p>Weekly reports with real numbers — reach, leads, conversions. No fluff, just facts.</p></div>
+        <div class="wc-card reveal reveal-d2"><div class="wc-card-icon">🔓</div><h4>No Long-Term Lock-Ins</h4><p>Month-to-month plans. We earn your business every single month through results.</p></div>
+        <div class="wc-card reveal reveal-d3"><div class="wc-card-icon">📈</div><h4>Growth-Focused Approach</h4><p>Every action is mapped to a business outcome — more leads, calls, and sales.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY LOOPY (detail) ═══ -->
   <section id="why" class="why-section">
     <div class="container">
       <div class="why-grid">
         <div class="why-left">
           <span class="section-label">Why Loopy Media</span>
           <h2 class="section-title">We Don't Just<br/>Post. We <span>Sell.</span></h2>
-          <p class="section-sub">Most agencies focus on vanity metrics. We focus on what actually matters — growing your business and increasing revenue.</p>
+          <p class="section-sub">Most agencies focus on vanity metrics. We focus on what actually matters — growing your revenue.</p>
           <a href="#contact" class="btn-primary">Start Growing Today</a>
-
           <div class="why-numbers">
-            <div class="why-num">
-              <div class="wn-row">
-                <span class="wn-val counter" data-target="95">0</span><span class="wn-unit">%</span>
-              </div>
-              <span class="wn-label">Client Retention Rate</span>
-            </div>
-            <div class="why-num">
-              <div class="wn-row">
-                <span class="wn-val counter" data-target="48">0</span><span class="wn-unit">h</span>
-              </div>
-              <span class="wn-label">Average Turnaround</span>
-            </div>
+            <div class="why-num"><div class="wn-row"><span class="wn-val counter" data-target="95">0</span><span class="wn-unit">%</span></div><span class="wn-label">Client Retention Rate</span></div>
+            <div class="why-num"><div class="wn-row"><span class="wn-val counter" data-target="48">0</span><span class="wn-unit">h</span></div><span class="wn-label">Average Turnaround</span></div>
           </div>
         </div>
-
         <div class="why-right">
-          <div class="why-card wc-1 reveal">
-            <div class="wc-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 20L10 13L15 17L22 8" stroke="#FFC200" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="6" r="3" fill="#FFC200"/></svg>
-            </div>
-            <h4>Revenue-Driven Strategy</h4>
-            <p>Every post, ad, and campaign is mapped to a business outcome — more leads, more calls, more sales.</p>
-          </div>
-          <div class="why-card wc-2 reveal reveal-d1">
-            <div class="wc-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#FFC200" stroke-width="2"/><path d="M14 8V14L18 17" stroke="#FFC200" stroke-width="2.2" stroke-linecap="round"/></svg>
-            </div>
-            <h4>48-Hour Turnaround</h4>
-            <p>No long waiting periods. We deliver high-quality work at startup speed so you stay ahead of competitors.</p>
-          </div>
-          <div class="why-card wc-3 reveal reveal-d2">
-            <div class="wc-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 5C9 5 5 9 5 14C5 19 9 23 14 23C19 23 23 19 23 14" stroke="#FFC200" stroke-width="2.2" stroke-linecap="round"/><path d="M20 5L23 8L20 11" stroke="#FFC200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h4>End-to-End Ownership</h4>
-            <p>From strategy to execution to reporting — we own every step so you never have to juggle multiple vendors.</p>
-          </div>
-          <div class="why-card wc-4 reveal reveal-d3">
-            <div class="wc-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="20" height="16" rx="2.5" stroke="#FFC200" stroke-width="2"/><path d="M9 12H19M9 16H15" stroke="#FFC200" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <h4>Weekly Clear Reports</h4>
-            <p>Detailed weekly reports with real numbers — reach, leads, conversions — and a dedicated manager always on call.</p>
-          </div>
+          <div class="why-card wc-1 reveal"><div class="wc-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 20L10 13L15 17L22 8" stroke="#FFC200" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="6" r="3" fill="#FFC200"/></svg></div><h4>Revenue-Driven Strategy</h4><p>Every post, ad, and campaign is mapped to a business outcome — more leads, more calls, more sales.</p></div>
+          <div class="why-card wc-2 reveal reveal-d1"><div class="wc-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#FFC200" stroke-width="2"/><path d="M14 8V14L18 17" stroke="#FFC200" stroke-width="2.2" stroke-linecap="round"/></svg></div><h4>48-Hour Turnaround</h4><p>No long waiting periods. We deliver high-quality work at startup speed.</p></div>
+          <div class="why-card wc-3 reveal reveal-d2"><div class="wc-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 5C9 5 5 9 5 14C5 19 9 23 14 23C19 23 23 19 23 14" stroke="#FFC200" stroke-width="2.2" stroke-linecap="round"/><path d="M20 5L23 8L20 11" stroke="#FFC200" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>End-to-End Ownership</h4><p>From strategy to execution to reporting — we own every step so you never juggle vendors.</p></div>
+          <div class="why-card wc-4 reveal reveal-d3"><div class="wc-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="20" height="16" rx="2.5" stroke="#FFC200" stroke-width="2"/><path d="M9 12H19M9 16H15" stroke="#FFC200" stroke-width="2" stroke-linecap="round"/></svg></div><h4>Weekly Clear Reports</h4><p>Detailed weekly reports with real numbers — reach, leads, conversions — and a manager always on call.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       QUIZ — Find Your Perfect Plan
-  ═══════════════════════════════════════ -->
+  <!-- ═══ PORTFOLIO ═══ -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Projects That<br/><span>Drive Real Results</span></h2>
+        <p class="section-sub">A selection of websites, campaigns, and brand identities that delivered measurable growth.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal">
+          <div class="pc-image"><div class="pc-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="8" width="40" height="30" rx="4" stroke="#FFC200" stroke-width="2"/><path d="M4 36L14 26L20 32L30 22L44 36" stroke="#FFC200" stroke-width="2" stroke-linejoin="round"/><circle cx="16" cy="18" r="4" stroke="#FFC200" stroke-width="2"/></svg><span>Project Screenshot</span></div><div class="pc-overlay"><a href="#contact" class="btn-primary btn-sm">Get Similar Work →</a></div></div>
+          <div class="pc-body"><div class="pc-tags"><span class="pc-tag-item">Healthcare</span><span class="pc-tag-item">Website</span></div><h3>Dianamik Hospital Management &amp; Consultancy</h3><p>Modern hospital branding and consultancy website with patient-friendly UX and professional medical aesthetic.</p><div class="pc-services"><span>✓ Website Design</span><span>✓ Branding</span><span>✓ SEO</span></div></div>
+        </div>
+        <div class="portfolio-card reveal reveal-d1">
+          <div class="pc-image"><div class="pc-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="4" width="32" height="40" rx="4" stroke="#FFC200" stroke-width="2"/><path d="M16 16H32M16 24H32M16 32H24" stroke="#FFC200" stroke-width="2" stroke-linecap="round"/></svg><span>Project Screenshot</span></div><div class="pc-overlay"><a href="#contact" class="btn-primary btn-sm">Get Similar Work →</a></div></div>
+          <div class="pc-body"><div class="pc-tags"><span class="pc-tag-item">Healthcare</span><span class="pc-tag-item">Appointments</span></div><h3>Samata Hospital Website</h3><p>Appointment-focused hospital website with online booking integration, doctor profiles, and trust-building design.</p><div class="pc-services"><span>✓ Website Design</span><span>✓ Booking System</span><span>✓ Content</span></div></div>
+        </div>
+        <div class="portfolio-card reveal reveal-d2">
+          <div class="pc-image"><div class="pc-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" stroke="#FFC200" stroke-width="2"/><rect x="10" y="18" width="10" height="18" rx="2" stroke="#FFC200" stroke-width="2"/><rect x="24" y="12" width="10" height="24" rx="2" stroke="#FFC200" stroke-width="2"/></svg><span>Project Screenshot</span></div><div class="pc-overlay"><a href="#contact" class="btn-primary btn-sm">Get Similar Work →</a></div></div>
+          <div class="pc-body"><div class="pc-tags"><span class="pc-tag-item">SaaS</span><span class="pc-tag-item">Dashboard</span></div><h3>CoreInventory – Inventory Management System</h3><p>Dashboard-style SaaS showcase with product feature pages, pricing tables, and lead generation funnels.</p><div class="pc-services"><span>✓ Web App Design</span><span>✓ UI/UX</span><span>✓ Lead Gen</span></div></div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="pc-image"><div class="pc-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="#FFC200" stroke-width="2"/><path d="M16 24C16 24 19 28 24 28C29 28 32 24 32 24" stroke="#FFC200" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="20" r="2" fill="#FFC200"/><circle cx="30" cy="20" r="2" fill="#FFC200"/></svg><span>Campaign Showcase</span></div><div class="pc-overlay"><a href="#contact" class="btn-primary btn-sm">Get Similar Work →</a></div></div>
+          <div class="pc-body"><div class="pc-tags"><span class="pc-tag-item">Influencer</span><span class="pc-tag-item">Campaigns</span></div><h3>Influencer Marketing Campaigns</h3><p>End-to-end influencer collaboration management — from sourcing creators to measuring campaign ROI.</p><div class="pc-services"><span>✓ Influencer Outreach</span><span>✓ Campaign Strategy</span><span>✓ Analytics</span></div></div>
+        </div>
+        <div class="portfolio-card reveal reveal-d1">
+          <div class="pc-image"><div class="pc-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="18" height="18" rx="3" stroke="#FFC200" stroke-width="2"/><rect x="26" y="4" width="18" height="18" rx="3" stroke="#FFC200" stroke-width="2"/><rect x="4" y="26" width="18" height="18" rx="3" stroke="#FFC200" stroke-width="2"/><rect x="26" y="26" width="18" height="18" rx="3" stroke="#FFC200" stroke-width="2"/></svg><span>Account Management</span></div><div class="pc-overlay"><a href="#contact" class="btn-primary btn-sm">Get Similar Work →</a></div></div>
+          <div class="pc-body"><div class="pc-tags"><span class="pc-tag-item">Instagram</span><span class="pc-tag-item">Growth</span></div><h3>Influencer Account Management</h3><p>Instagram growth management — content strategy, posting schedules, and audience building for creator accounts.</p><div class="pc-services"><span>✓ Content Strategy</span><span>✓ Posting Management</span><span>✓ Growth Tracking</span></div></div>
+        </div>
+        <div class="portfolio-card reveal reveal-d2">
+          <div class="pc-image"><div class="pc-placeholder"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M8 36L18 20L26 30L32 22L40 36H8Z" stroke="#FFC200" stroke-width="2" stroke-linejoin="round"/><circle cx="36" cy="12" r="6" stroke="#FFC200" stroke-width="2"/><path d="M33 12H39M36 9V15" stroke="#FFC200" stroke-width="2" stroke-linecap="round"/></svg><span>Ads Campaign Results</span></div><div class="pc-overlay"><a href="#contact" class="btn-primary btn-sm">Get Similar Work →</a></div></div>
+          <div class="pc-body"><div class="pc-tags"><span class="pc-tag-item">Meta Ads</span><span class="pc-tag-item">Lead Gen</span></div><h3>Meta Ads Management</h3><p>Performance marketing campaigns that generated high-quality leads at optimal cost per acquisition.</p><div class="pc-services"><span>✓ Meta Ads</span><span>✓ Lead Generation</span><span>✓ Funnel Building</span></div></div>
+        </div>
+      </div>
+      <div class="portfolio-cta reveal"><p>Want results like these for your business?</p><a href="#contact" class="btn-primary">Get a Free Audit →</a></div>
+    </div>
+  </section>
+
+  <!-- ═══ INDUSTRIES ═══ -->
+  <section id="industries" class="industries-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Industries</span>
+        <h2 class="section-title">Industries We<br/><span>Help Grow</span></h2>
+        <p class="section-sub">We've helped businesses across these sectors build their brand, attract customers, and grow revenue.</p>
+      </div>
+      <div class="industries-grid">
+        <div class="industry-card reveal"><div class="ind-icon">🏥</div><h4>Clinics &amp; Hospitals</h4><p>Patient-focused websites from ₹799/mo and social media that drive appointment bookings.</p></div>
+        <div class="industry-card reveal reveal-d1"><div class="ind-icon">🍕</div><h4>Restaurants</h4><p>Mouth-watering content and local SEO that fills tables and increases online orders.</p></div>
+        <div class="industry-card reveal reveal-d2"><div class="ind-icon">☕</div><h4>Cafes</h4><p>Instagram-worthy visuals and community management that turns followers into regulars.</p></div>
+        <div class="industry-card reveal reveal-d3"><div class="ind-icon">🏋️</div><h4>Gyms &amp; Fitness</h4><p>Lead generation campaigns and fitness content that grow memberships month over month.</p></div>
+        <div class="industry-card reveal"><div class="ind-icon">🏫</div><h4>Educational Institutes</h4><p>Admission-focused marketing that showcases your institution and attracts quality students.</p></div>
+        <div class="industry-card reveal reveal-d1"><div class="ind-icon">🛍️</div><h4>Local Businesses</h4><p>Hyperlocal digital marketing that puts your business in front of your ideal customers.</p></div>
+        <div class="industry-card reveal reveal-d2"><div class="ind-icon">🏢</div><h4>Service-Based Businesses</h4><p>Professional branding and lead funnels that position you as the go-to expert.</p></div>
+        <div class="industry-card reveal reveal-d3"><div class="ind-icon">💼</div><h4>Startups</h4><p>Launch-ready branding and growth marketing that establishes your presence from day one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ QUIZ ═══ -->
   <section id="quiz" class="quiz-section">
     <div class="container">
       <div class="section-header centered">
         <span class="section-label">Interactive Quiz</span>
         <h2 class="section-title">Find Your <span>Perfect Plan</span></h2>
-        <p class="section-sub">Answer 4 quick questions and we'll recommend the package that fits your business best.</p>
+        <p class="section-sub">Answer a few quick questions and get a personalized recommendation for your business.</p>
       </div>
-
       <div class="quiz-wrap">
-        <!-- Progress Bar -->
         <div class="quiz-progress">
           <div class="qp-step active" data-step="1">1</div>
           <div class="qp-line"><div class="qp-line-fill" id="qpLineFill"></div></div>
@@ -305,70 +327,43 @@
           <div class="qp-line"><div class="qp-line-fill" id="qpLineFill3"></div></div>
           <div class="qp-step" data-step="4">4</div>
         </div>
-
-        <!-- Questions -->
         <div class="quiz-cards" id="quizCards">
-
           <div class="quiz-card active" data-q="1">
-            <h3>What stage is your business in?</h3>
+            <h3>What type of business do you run?</h3>
             <div class="quiz-options">
-              <button class="quiz-opt" data-val="starter">🌱 Just Starting (0–6 months)</button>
-              <button class="quiz-opt" data-val="growth">📈 Growing (6 months – 2 years)</button>
-              <button class="quiz-opt" data-val="scale">🚀 Established &amp; Scaling (2+ years)</button>
+              <button class="quiz-opt" data-val="hospital" data-type="hospital">🏥 Clinic / Hospital</button>
+              <button class="quiz-opt" data-val="restaurant" data-type="restaurant">🍕 Restaurant / Cafe</button>
+              <button class="quiz-opt" data-val="gym" data-type="gym">🏋️ Gym / Fitness Center</button>
+              <button class="quiz-opt" data-val="other" data-type="other">💼 Other Local Business / Startup</button>
             </div>
           </div>
-
-          <div class="quiz-card" data-q="2">
-            <h3>What's your biggest challenge right now?</h3>
-            <div class="quiz-options">
-              <button class="quiz-opt" data-val="starter">😕 No online presence at all</button>
-              <button class="quiz-opt" data-val="growth">📱 Inconsistent social media &amp; low engagement</button>
-              <button class="quiz-opt" data-val="scale">💰 Need more leads / sales fast</button>
-            </div>
-          </div>
-
-          <div class="quiz-card" data-q="3">
+          <div class="quiz-card" data-q="2"><h3 id="q2Title">Loading question…</h3><div class="quiz-options" id="q2Options"></div></div>
+          <div class="quiz-card" data-q="3"><h3 id="q3Title">Loading question…</h3><div class="quiz-options" id="q3Options"></div></div>
+          <div class="quiz-card" data-q="4">
             <h3>What's your monthly marketing budget?</h3>
             <div class="quiz-options">
-              <button class="quiz-opt" data-val="starter">💵 Under ₹15,000</button>
-              <button class="quiz-opt" data-val="growth">💵 ₹15,000 – ₹30,000</button>
-              <button class="quiz-opt" data-val="scale">💵 ₹30,000+</button>
+              <button class="quiz-opt" data-val="starter">💵 Under ₹5,000/month</button>
+              <button class="quiz-opt" data-val="growth">💵 ₹5,000 – ₹15,000/month</button>
+              <button class="quiz-opt" data-val="premium">💵 ₹15,000+/month</button>
             </div>
           </div>
-
-          <div class="quiz-card" data-q="4">
-            <h3>Which goal matters most to you?</h3>
-            <div class="quiz-options">
-              <button class="quiz-opt" data-val="starter">🎨 Build my brand identity</button>
-              <button class="quiz-opt" data-val="growth">👥 Grow my audience &amp; engagement</button>
-              <button class="quiz-opt" data-val="scale">📊 Maximize ROI &amp; sales</button>
-            </div>
-          </div>
-
-          <!-- Result -->
           <div class="quiz-card quiz-result" data-q="result">
-            <div class="qr-badge">Your Perfect Match</div>
+            <div class="qr-badge">✨ Your Perfect Match</div>
             <h3 id="qrTitle">Growth Plan</h3>
             <p id="qrDesc">Based on your answers, this plan fits you perfectly.</p>
-            <div class="qr-price">
-              <span class="qr-cur">₹</span>
-              <span class="qr-amt" id="qrAmount">19,999</span>
-              <span class="qr-per">/mo</span>
-            </div>
+            <div class="qr-price"><span class="qr-cur">₹</span><span class="qr-amt" id="qrAmount">4,999</span><span class="qr-per">/mo</span></div>
+            <div class="qr-recommendation" id="qrRecommendation"></div>
             <div class="qr-actions">
               <a href="#contact" class="btn-primary">Book Free Consultation</a>
               <button class="btn-ghost" id="quizRetry">Retake Quiz</button>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       COMPARISON TABLE
-  ═══════════════════════════════════════ -->
+  <!-- ═══ COMPARISON TABLE ═══ -->
   <section id="compare" class="compare-section">
     <div class="container">
       <div class="section-header centered">
@@ -376,304 +371,341 @@
         <h2 class="section-title">Loopy Media <span>vs Others</span></h2>
         <p class="section-sub">See exactly why brands choose us over traditional agencies and freelancers.</p>
       </div>
-
       <div class="compare-wrap">
         <div class="compare-table">
-          <!-- Header Row -->
           <div class="ct-row ct-head">
             <div class="ct-cell ct-feature">Feature</div>
-            <div class="ct-cell ct-us">
-              <div class="ct-logo">
-                <svg viewBox="0 0 28 28" fill="none" width="22" height="22"><circle cx="14" cy="14" r="14" fill="#FFC200"/><path d="M14 7C10 7 7 10 7 14C7 18 10 21 14 21C18 21 21 18 21 14" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"/></svg>
-              </div>
-              Loopy Media
-            </div>
+            <div class="ct-cell ct-us"><div class="ct-logo"><svg viewBox="0 0 28 28" fill="none" width="22" height="22"><circle cx="14" cy="14" r="14" fill="#FFC200"/><path d="M14 7C10 7 7 10 7 14C7 18 10 21 14 21C18 21 21 18 21 14" stroke="#0A0A0A" stroke-width="2" stroke-linecap="round"/></svg></div>Loopy Media</div>
             <div class="ct-cell ct-others">Agencies</div>
             <div class="ct-cell ct-others">Freelancers</div>
           </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">Revenue-Focused Strategy</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-maybe">~</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">✗</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">48-Hour Turnaround</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">✗</span></div>
-            <div class="ct-cell ct-others"><span class="ct-maybe">~</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">Dedicated Account Manager</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">✗</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">Weekly Performance Reports</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-maybe">Monthly</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">✗</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">End-to-End Service (Web + Social + Ads)</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-maybe">~</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">✗</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">No Long-Term Contracts</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">12 mo</span></div>
-            <div class="ct-cell ct-others"><span class="ct-yes">✓</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">Free Brand Audit</div>
-            <div class="ct-cell ct-us"><span class="ct-yes">✓</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">Paid</span></div>
-            <div class="ct-cell ct-others"><span class="ct-no">✗</span></div>
-          </div>
-
-          <div class="ct-row">
-            <div class="ct-cell ct-feature">Starting Price</div>
-            <div class="ct-cell ct-us"><strong>₹9,999/mo</strong></div>
-            <div class="ct-cell ct-others">₹50,000+/mo</div>
-            <div class="ct-cell ct-others">₹5,000–25,000</div>
-          </div>
+          <div class="ct-row"><div class="ct-cell ct-feature">Revenue-Focused Strategy</div><div class="ct-cell ct-us"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-maybe">~</span></div><div class="ct-cell ct-others"><span class="ct-no">✗</span></div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">48-Hour Turnaround</div><div class="ct-cell ct-us"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-no">✗</span></div><div class="ct-cell ct-others"><span class="ct-maybe">~</span></div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">Dedicated Account Manager</div><div class="ct-cell ct-us"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-no">✗</span></div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">Weekly Performance Reports</div><div class="ct-cell ct-us"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-maybe">Monthly</span></div><div class="ct-cell ct-others"><span class="ct-no">✗</span></div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">End-to-End (Web + Social + Ads)</div><div class="ct-cell ct-us"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-maybe">~</span></div><div class="ct-cell ct-others"><span class="ct-no">✗</span></div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">Free Brand Audit</div><div class="ct-cell ct-us"><span class="ct-yes">✓</span></div><div class="ct-cell ct-others"><span class="ct-no">Paid</span></div><div class="ct-cell ct-others"><span class="ct-no">✗</span></div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">Website Starting Price</div><div class="ct-cell ct-us"><strong>₹799/mo</strong></div><div class="ct-cell ct-others">₹50,000+</div><div class="ct-cell ct-others">₹10,000+</div></div>
+          <div class="ct-row"><div class="ct-cell ct-feature">Social Media Starting Price</div><div class="ct-cell ct-us"><strong>₹1,999/mo</strong></div><div class="ct-cell ct-others">₹30,000+/mo</div><div class="ct-cell ct-others">₹5,000–15,000</div></div>
         </div>
-
-        <div class="compare-cta">
-          <p>The choice is clear. Let's build your growth loop.</p>
-          <a href="#contact" class="btn-primary">Get Started Today →</a>
-        </div>
+        <div class="compare-cta"><p>The choice is clear. Let's build your growth loop.</p><a href="#contact" class="btn-primary">Get Started Today →</a></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       PROCESS
-  ═══════════════════════════════════════ -->
+  <!-- ═══ PROCESS ═══ -->
   <section id="process">
     <div class="container">
       <div class="section-header centered">
-        <span class="section-label">How It Works</span>
+        <span class="section-label">How We Work</span>
         <h2 class="section-title">Our 4-Step<br/><span>Growth Loop</span></h2>
         <p class="section-sub">A proven framework that transforms your brand from invisible to irresistible.</p>
       </div>
-
       <div class="process-steps">
-        <div class="process-step reveal">
-          <div class="ps-number">01</div>
-          <div class="ps-content">
-            <h3>Audit &amp; Discover</h3>
-            <p>We deep-dive into your brand, competitors, and audience to identify gaps and untapped opportunities.</p>
-          </div>
-          <div class="ps-arrow">→</div>
-        </div>
-        <div class="process-step reveal reveal-d1">
-          <div class="ps-number">02</div>
-          <div class="ps-content">
-            <h3>Strategy &amp; Plan</h3>
-            <p>We craft a custom growth roadmap — content pillars, channels, campaigns, and timelines tailored to your goals.</p>
-          </div>
-          <div class="ps-arrow">→</div>
-        </div>
-        <div class="process-step reveal reveal-d2">
-          <div class="ps-number">03</div>
-          <div class="ps-content">
-            <h3>Create &amp; Execute</h3>
-            <p>Our team produces scroll-stopping content, builds your digital assets, and launches campaigns with precision.</p>
-          </div>
-          <div class="ps-arrow">→</div>
-        </div>
-        <div class="process-step reveal reveal-d3">
-          <div class="ps-number">04</div>
-          <div class="ps-content">
-            <h3>Optimize &amp; Scale</h3>
-            <p>We track everything, report weekly, and double down on what works to compound your growth month over month.</p>
-          </div>
-          <div class="ps-arrow last">✦</div>
-        </div>
+        <div class="process-step reveal"><div class="ps-number">01</div><div class="ps-content"><h3>Free Audit</h3><p>We deep-dive into your brand, competitors, and audience to identify gaps and opportunities — at zero cost.</p></div><div class="ps-arrow">→</div></div>
+        <div class="process-step reveal reveal-d1"><div class="ps-number">02</div><div class="ps-content"><h3>Strategy Planning</h3><p>We craft a custom growth roadmap — content pillars, channels, campaigns, and timelines tailored to your goals.</p></div><div class="ps-arrow">→</div></div>
+        <div class="process-step reveal reveal-d2"><div class="ps-number">03</div><div class="ps-content"><h3>Implementation</h3><p>Our team produces scroll-stopping content, builds your digital assets, and launches campaigns with precision.</p></div><div class="ps-arrow">→</div></div>
+        <div class="process-step reveal reveal-d3"><div class="ps-number">04</div><div class="ps-content"><h3>Growth Tracking</h3><p>We track everything, report weekly, and double down on what works to compound your growth month over month.</p></div><div class="ps-arrow last">✦</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       TESTIMONIALS
-  ═══════════════════════════════════════ -->
+  <!-- ═══ TESTIMONIALS ═══ -->
   <section id="testimonials" class="testimonials-section">
     <div class="container">
       <div class="section-header centered">
         <span class="section-label">Testimonials</span>
         <h2 class="section-title">Brands That<br/><span>Trusted the Loop</span></h2>
       </div>
-
       <div class="testimonials-slider">
         <div class="ts-track" id="tsTrack">
-
-          <div class="testimonial-card">
-            <div class="tc-stars">★★★★★</div>
-            <p class="tc-quote">"Loopy Media completely transformed our Instagram presence. In just 3 months, our DMs were flooded with inquiries. Best investment we made for our restaurant."</p>
-            <div class="tc-author">
-              <div class="tc-avatar">RK</div>
-              <div>
-                <strong>Rahul Kapoor</strong>
-                <span>Owner, Kapoor Kitchen, Ahmedabad</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="tc-stars">★★★★★</div>
-            <p class="tc-quote">"They built our website in under 2 weeks and it looked better than anything we'd seen at 3x the price. Our online bookings doubled within the first month."</p>
-            <div class="tc-author">
-              <div class="tc-avatar">PM</div>
-              <div>
-                <strong>Priya Mehta</strong>
-                <span>Founder, Studio PM Salon</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="tc-stars">★★★★★</div>
-            <p class="tc-quote">"The team at Loopy genuinely cares about your growth. They treated our small brand like a big client. Our social following went from 200 to 4,000 in 4 months!"</p>
-            <div class="tc-author">
-              <div class="tc-avatar">AS</div>
-              <div>
-                <strong>Arjun Shah</strong>
-                <span>Co-founder, Ahmedabad Apparel Co.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="tc-stars">★★★★★</div>
-            <p class="tc-quote">"Our brand identity was outdated and confusing. Loopy Media revamped everything — logo, colors, packaging design. Now clients say we look premium. Sales are up 40%."</p>
-            <div class="tc-author">
-              <div class="tc-avatar">NP</div>
-              <div>
-                <strong>Neha Patel</strong>
-                <span>Director, NP Organics</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="tc-stars">★★★★★</div>
-            <p class="tc-quote">"I was skeptical about social media marketing, but Loopy Media showed me the numbers week by week. ROI was clear from month one. Highly recommended for any local business."</p>
-            <div class="tc-author">
-              <div class="tc-avatar">VJ</div>
-              <div>
-                <strong>Vivek Joshi</strong>
-                <span>Owner, Joshi Electronics, Ahmedabad</span>
-              </div>
-            </div>
-          </div>
-
+          <div class="testimonial-card"><div class="tc-stars">★★★★★</div><p class="tc-quote">"Loopy Media completely transformed our Instagram presence. In just 3 months, our DMs were flooded with inquiries. Best investment we made for our restaurant."</p><div class="tc-author"><div class="tc-avatar-wrap"><div class="tc-avatar-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="5" stroke="#FFC200" stroke-width="1.5"/><path d="M3 21C3 17 7 14 12 14C17 14 21 17 21 21" stroke="#FFC200" stroke-width="1.5" stroke-linecap="round"/></svg></div></div><div><strong>Rahul Kapoor</strong><span>Owner, Kapoor Kitchen, Ahmedabad</span></div></div></div>
+          <div class="testimonial-card"><div class="tc-stars">★★★★★</div><p class="tc-quote">"They built our website in under 2 weeks and it looked better than anything we'd seen at 3x the price. Our online bookings doubled within the first month."</p><div class="tc-author"><div class="tc-avatar-wrap"><div class="tc-avatar-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="5" stroke="#FFC200" stroke-width="1.5"/><path d="M3 21C3 17 7 14 12 14C17 14 21 17 21 21" stroke="#FFC200" stroke-width="1.5" stroke-linecap="round"/></svg></div></div><div><strong>Priya Mehta</strong><span>Founder, Studio PM Salon</span></div></div></div>
+          <div class="testimonial-card"><div class="tc-stars">★★★★★</div><p class="tc-quote">"The team at Loopy genuinely cares about your growth. They treated our small brand like a big client. Our social following went from 200 to 4,000 in 4 months!"</p><div class="tc-author"><div class="tc-avatar-wrap"><div class="tc-avatar-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="5" stroke="#FFC200" stroke-width="1.5"/><path d="M3 21C3 17 7 14 12 14C17 14 21 17 21 21" stroke="#FFC200" stroke-width="1.5" stroke-linecap="round"/></svg></div></div><div><strong>Arjun Shah</strong><span>Co-founder, Ahmedabad Apparel Co.</span></div></div></div>
+          <div class="testimonial-card"><div class="tc-stars">★★★★★</div><p class="tc-quote">"Our brand identity was outdated and confusing. Loopy Media revamped everything — logo, colors, packaging. Now clients say we look premium. Sales are up 40%."</p><div class="tc-author"><div class="tc-avatar-wrap"><div class="tc-avatar-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="5" stroke="#FFC200" stroke-width="1.5"/><path d="M3 21C3 17 7 14 12 14C17 14 21 17 21 21" stroke="#FFC200" stroke-width="1.5" stroke-linecap="round"/></svg></div></div><div><strong>Neha Patel</strong><span>Director, NP Organics</span></div></div></div>
+          <div class="testimonial-card"><div class="tc-stars">★★★★★</div><p class="tc-quote">"I was skeptical about social media marketing, but Loopy Media showed me the numbers week by week. ROI was clear from month one. Highly recommended."</p><div class="tc-author"><div class="tc-avatar-wrap"><div class="tc-avatar-img"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="5" stroke="#FFC200" stroke-width="1.5"/><path d="M3 21C3 17 7 14 12 14C17 14 21 17 21 21" stroke="#FFC200" stroke-width="1.5" stroke-linecap="round"/></svg></div></div><div><strong>Vivek Joshi</strong><span>Owner, Joshi Electronics, Ahmedabad</span></div></div></div>
         </div>
-
-        <div class="ts-controls">
-          <button class="ts-btn" id="tsPrev" aria-label="Previous">←</button>
-          <div class="ts-dots" id="tsDots"></div>
-          <button class="ts-btn" id="tsNext" aria-label="Next">→</button>
-        </div>
+        <div class="ts-controls"><button class="ts-btn" id="tsPrev" aria-label="Previous">←</button><div class="ts-dots" id="tsDots"></div><button class="ts-btn" id="tsNext" aria-label="Next">→</button></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       PRICING
-  ═══════════════════════════════════════ -->
-  <section id="pricing">
+  <!-- ═══════════════════════════════════════════════
+       PRICING — 4 tabbed sections
+  ═══════════════════════════════════════════════ -->
+  <section id="pricing" class="pricing-section-main">
     <div class="container">
+
       <div class="section-header centered">
         <span class="section-label">Pricing</span>
-        <h2 class="section-title">Simple, Transparent<br/><span>Pricing</span></h2>
-        <p class="section-sub">No hidden fees. No long-term lock-ins. Just results-driven packages built for growth.</p>
+        <h2 class="section-title">Transparent<br/><span>Monthly Pricing</span></h2>
+        <p class="section-sub">No hidden fees. No long-term lock-ins. Choose the service you need and start growing today.</p>
       </div>
 
-      <div class="pricing-toggle">
-        <span class="pt-label active" id="ptMonthly">Monthly</span>
-        <div class="pt-switch" id="ptSwitch">
-          <div class="pt-thumb"></div>
-        </div>
-        <span class="pt-label" id="ptAnnual">Annual <span class="save-badge">Save 20%</span></span>
+      <!-- Pricing Anchors Banner -->
+      <div class="pricing-anchors reveal">
+        <div class="pa-item"><span class="pa-icon">🌐</span><div><strong>Website Plans</strong><span>from ₹799/month</span></div></div>
+        <div class="pa-div"></div>
+        <div class="pa-item"><span class="pa-icon">📱</span><div><strong>Social Media Plans</strong><span>from ₹1,999/month</span></div></div>
+        <div class="pa-div"></div>
+        <div class="pa-item"><span class="pa-icon">🎯</span><div><strong>Digital Marketing Plans</strong><span>from ₹4,999/month</span></div></div>
+        <div class="pa-div"></div>
+        <div class="pa-item"><span class="pa-icon">🚀</span><div><strong>Bundle Packages</strong><span>from ₹5,999/month</span></div></div>
       </div>
 
-      <div class="pricing-grid">
-        <div class="pricing-card reveal">
-          <div class="pc-tag">Starter</div>
-          <div class="pc-price">
-            <span class="pc-currency">₹</span>
-            <span class="pc-amount monthly-price">9,999</span>
-            <span class="pc-amount annual-price hidden">7,999</span>
-            <span class="pc-per">/mo</span>
-          </div>
-          <p class="pc-desc">Perfect for new businesses ready to establish their digital presence.</p>
-          <ul class="pc-features">
-            <li>✓ Social Media Management (1 platform)</li>
-            <li>✓ 12 Posts / Month</li>
-            <li>✓ Basic Graphic Design</li>
-            <li>✓ Monthly Analytics Report</li>
-            <li>✓ WhatsApp Support</li>
-            <li class="muted">✗ Website</li>
-            <li class="muted">✗ Paid Ads</li>
-            <li class="muted">✗ Reels Production</li>
-          </ul>
-          <a href="#contact" class="btn-ghost full">Get Started</a>
-        </div>
+      <!-- Tab Nav -->
+      <div class="ptab-nav" id="pricingTabNav">
+        <button class="ptab-btn active" data-tab="websites">🌐 Websites</button>
+        <button class="ptab-btn" data-tab="social">📱 Social Media</button>
+        <button class="ptab-btn" data-tab="marketing">🎯 Digital Marketing</button>
+        <button class="ptab-btn" data-tab="bundles">🚀 Bundles</button>
+      </div>
 
-        <div class="pricing-card pc-featured reveal reveal-d1">
-          <div class="pc-popular">Most Popular</div>
-          <div class="pc-tag">Growth</div>
-          <div class="pc-price">
-            <span class="pc-currency">₹</span>
-            <span class="pc-amount monthly-price">19,999</span>
-            <span class="pc-amount annual-price hidden">15,999</span>
-            <span class="pc-per">/mo</span>
-          </div>
-          <p class="pc-desc">For growing brands ready to dominate social and convert traffic into sales.</p>
-          <ul class="pc-features">
-            <li>✓ Social Media (2 platforms)</li>
-            <li>✓ 24 Posts + 8 Reels / Month</li>
-            <li>✓ Premium Design &amp; Copywriting</li>
-            <li>✓ 1-Page Website / Landing Page</li>
-            <li>✓ Weekly Analytics Reports</li>
-            <li>✓ Dedicated Account Manager</li>
-            <li>✓ 1 Paid Ad Campaign</li>
-            <li class="muted">✗ Full Website</li>
-          </ul>
-          <a href="#contact" class="btn-primary full">Get Started</a>
+      <!-- ── TAB 1: WEBSITE DEVELOPMENT ── -->
+      <div class="ptab-panel active" id="tab-websites">
+        <div class="ptab-header">
+          <h3>Website Development Plans</h3>
+          <p>Professional websites designed to help your business attract customers and generate leads.</p>
         </div>
-
-        <div class="pricing-card reveal reveal-d2">
-          <div class="pc-tag">Scale</div>
-          <div class="pc-price">
-            <span class="pc-currency">₹</span>
-            <span class="pc-amount monthly-price">39,999</span>
-            <span class="pc-amount annual-price hidden">31,999</span>
-            <span class="pc-per">/mo</span>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pc-tag">Starter Website</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">799</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Small Businesses &amp; Startups</strong></p>
+            <p class="pc-desc">Everything you need to get online and start attracting customers.</p>
+            <ul class="pc-features">
+              <li>✓ 5 Pages Website</li>
+              <li>✓ Mobile Responsive Design</li>
+              <li>✓ Contact Form</li>
+              <li>✓ WhatsApp Integration</li>
+              <li>✓ Basic SEO Setup</li>
+              <li>✓ Free Hosting &amp; Maintenance</li>
+              <li>✓ Monthly Updates</li>
+            </ul>
+            <a href="#contact" class="btn-ghost full">Get Started</a>
           </div>
-          <p class="pc-desc">The complete growth engine for established brands ready to scale aggressively.</p>
-          <ul class="pc-features">
-            <li>✓ Social Media (3+ platforms)</li>
-            <li>✓ Unlimited Posts &amp; Reels</li>
-            <li>✓ Full Custom Website</li>
-            <li>✓ Full Branding Package</li>
-            <li>✓ 3 Paid Ad Campaigns</li>
-            <li>✓ Store / Product Shoots</li>
-            <li>✓ Daily Analytics Dashboard</li>
-            <li>✓ Priority 24/7 Support</li>
-          </ul>
-          <a href="#contact" class="btn-ghost full">Get Started</a>
+
+          <div class="pricing-card pc-featured reveal reveal-d1">
+            <div class="pc-popular">⭐ Most Popular</div>
+            <div class="pc-tag">Business Website</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">1,499</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Clinics, Cafes, Gyms &amp; Local Businesses</strong></p>
+            <p class="pc-desc">Everything in Starter, plus powerful features to grow your business faster.</p>
+            <ul class="pc-features">
+              <li>✓ Everything in Starter</li>
+              <li>✓ Up to 10 Pages</li>
+              <li>✓ Custom Design</li>
+              <li>✓ Google Maps Integration</li>
+              <li>✓ Blog Section</li>
+              <li>✓ Speed Optimization</li>
+              <li>✓ Advanced SEO Setup</li>
+              <li>✓ Monthly Content Updates</li>
+            </ul>
+            <a href="#contact" class="btn-primary full">Get Started</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-d2">
+            <div class="pc-tag">Growth Website</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">2,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Hospitals &amp; Growing Businesses</strong></p>
+            <p class="pc-desc">Full-featured website with lead capture and automation to maximize conversions.</p>
+            <ul class="pc-features">
+              <li>✓ Everything in Business</li>
+              <li>✓ Booking/Appointment System</li>
+              <li>✓ Lead Capture Funnels</li>
+              <li>✓ CRM Integration</li>
+              <li>✓ Advanced Analytics</li>
+              <li>✓ Landing Pages</li>
+              <li>✓ Priority Support</li>
+              <li>✓ Monthly Optimization</li>
+            </ul>
+            <a href="#contact" class="btn-ghost full">Book Consultation</a>
+          </div>
+        </div>
+        <div class="pricing-footer-note">
+          <p class="pfn-main">🛡️ All website plans include maintenance, security updates, hosting support, and ongoing technical assistance.</p>
+          <p class="pfn-sub">* Minimum 12-month commitment required.</p>
+        </div>
+      </div>
+
+      <!-- ── TAB 2: SOCIAL MEDIA ── -->
+      <div class="ptab-panel" id="tab-social">
+        <div class="ptab-header">
+          <h3>Social Media Management</h3>
+          <p>Build your brand, engage your audience, and grow your business online.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pc-tag">Starter Social</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">1,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>New Businesses</strong></p>
+            <p class="pc-desc">Get your brand on social media and start building an audience from scratch.</p>
+            <ul class="pc-features">
+              <li>✓ 8 Social Media Posts</li>
+              <li>✓ Graphic Design</li>
+              <li>✓ Caption Writing</li>
+              <li>✓ Hashtag Research</li>
+              <li>✓ Monthly Report</li>
+            </ul>
+            <a href="#contact" class="btn-ghost full">Start Growing</a>
+          </div>
+
+          <div class="pricing-card pc-featured reveal reveal-d1">
+            <div class="pc-popular">⭐ Most Popular</div>
+            <div class="pc-tag">Growth Social</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">4,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Businesses Looking For Consistent Growth</strong></p>
+            <p class="pc-desc">Grow your audience faster with reels, stories, and active community management.</p>
+            <ul class="pc-features">
+              <li>✓ 20 Social Media Posts</li>
+              <li>✓ Reels Strategy</li>
+              <li>✓ Community Management</li>
+              <li>✓ Content Calendar</li>
+              <li>✓ Story Designs</li>
+              <li>✓ Monthly Analytics</li>
+            </ul>
+            <a href="#contact" class="btn-primary full">Start Growing</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-d2">
+            <div class="pc-tag">Premium Social</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">9,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Established Businesses</strong></p>
+            <p class="pc-desc">Full social media domination with advanced strategy, competitor analysis, and monthly calls.</p>
+            <ul class="pc-features">
+              <li>✓ 30 Social Media Posts</li>
+              <li>✓ 8 Reels Concepts</li>
+              <li>✓ Daily Story Strategy</li>
+              <li>✓ Community Management</li>
+              <li>✓ Competitor Analysis</li>
+              <li>✓ Monthly Strategy Calls</li>
+              <li>✓ Advanced Reporting</li>
+            </ul>
+            <a href="#contact" class="btn-ghost full">Book Consultation</a>
+          </div>
+        </div>
+        <div class="pricing-footer-note">
+          <p class="pfn-main">🔒 All plans include a free brand audit. Cancel anytime — no lock-in contracts.</p>
+        </div>
+      </div>
+
+      <!-- ── TAB 3: DIGITAL MARKETING ── -->
+      <div class="ptab-panel" id="tab-marketing">
+        <div class="ptab-header">
+          <h3>Digital Marketing &amp; Lead Generation</h3>
+          <p>Generate more leads, customers, and sales through targeted marketing campaigns.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pc-tag">Lead Generation</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">4,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Businesses Starting with Paid Ads</strong></p>
+            <p class="pc-desc">Get your first Meta Ads campaign live and start generating qualified leads.</p>
+            <ul class="pc-features">
+              <li>✓ Meta Ads Setup</li>
+              <li>✓ Campaign Management</li>
+              <li>✓ Audience Research</li>
+              <li>✓ Monthly Reporting</li>
+            </ul>
+            <div class="pc-note">⚡ Ad Spend Separate</div>
+            <a href="#contact" class="btn-ghost full">Generate Leads</a>
+          </div>
+
+          <div class="pricing-card pc-featured reveal reveal-d1">
+            <div class="pc-popular">⭐ Most Popular</div>
+            <div class="pc-tag">Growth Marketing</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">9,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Businesses Ready to Scale</strong></p>
+            <p class="pc-desc">Multi-platform campaigns across Meta and Google with landing page optimization.</p>
+            <ul class="pc-features">
+              <li>✓ Meta Ads Management</li>
+              <li>✓ Google Ads Management</li>
+              <li>✓ Landing Page Optimization</li>
+              <li>✓ Lead Tracking</li>
+              <li>✓ Monthly Strategy Call</li>
+            </ul>
+            <div class="pc-note">⚡ Ad Spend Separate</div>
+            <a href="#contact" class="btn-primary full">Scale My Business</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-d2">
+            <div class="pc-tag">Scale Marketing</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">19,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Aggressive Growth Goals</strong></p>
+            <p class="pc-desc">Full-funnel performance marketing with retargeting, optimization, and dedicated management.</p>
+            <ul class="pc-features">
+              <li>✓ Everything in Growth</li>
+              <li>✓ Advanced Funnels</li>
+              <li>✓ Retargeting Campaigns</li>
+              <li>✓ Conversion Optimization</li>
+              <li>✓ Weekly Reporting</li>
+              <li>✓ Dedicated Account Manager</li>
+            </ul>
+            <div class="pc-note">⚡ Ad Spend Separate</div>
+            <a href="#contact" class="btn-ghost full">Book Consultation</a>
+          </div>
+        </div>
+        <div class="pricing-footer-note">
+          <p class="pfn-main">📊 All plans include campaign setup, creative support, and monthly performance reviews.</p>
+          <p class="pfn-sub">* Ad spend (Meta/Google budget) is billed separately based on your goals.</p>
+        </div>
+      </div>
+
+      <!-- ── TAB 4: BUNDLES ── -->
+      <div class="ptab-panel" id="tab-bundles">
+        <div class="ptab-header">
+          <h3>Business Growth Bundles</h3>
+          <p>Combine website, social media, and marketing into one powerful plan — and save.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <div class="pc-tag">Business Growth Bundle</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">5,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>New &amp; Small Businesses</strong></p>
+            <p class="pc-desc">Website + Social Media to build your brand foundation and start attracting customers.</p>
+            <ul class="pc-features">
+              <li>✓ Business Website</li>
+              <li>✓ Starter Social Media</li>
+              <li>✓ Monthly Maintenance</li>
+              <li>✓ WhatsApp Support</li>
+            </ul>
+            <div class="pc-savings">💰 Save vs individual plans</div>
+            <a href="#contact" class="btn-ghost full">Get Started</a>
+          </div>
+
+          <div class="pricing-card pc-featured reveal reveal-d1">
+            <div class="pc-popular">⭐ Most Popular</div>
+            <div class="pc-tag">Complete Growth Bundle</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">9,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Growing Businesses</strong></p>
+            <p class="pc-desc">Website + Social Media + Basic Ads — the complete digital presence package.</p>
+            <ul class="pc-features">
+              <li>✓ Business Website</li>
+              <li>✓ Growth Social Media</li>
+              <li>✓ Basic Meta Ads Management</li>
+              <li>✓ Monthly Reports</li>
+            </ul>
+            <div class="pc-savings">💰 Best value bundle</div>
+            <a href="#contact" class="btn-primary full">Get Started</a>
+          </div>
+
+          <div class="pricing-card reveal reveal-d2">
+            <div class="pc-tag">Ultimate Digital Growth</div>
+            <div class="pc-price"><span class="pc-currency">₹</span><span class="pc-amount">19,999</span><span class="pc-per">/month</span></div>
+            <p class="pc-best-for">Best For: <strong>Established &amp; Scaling Businesses</strong></p>
+            <p class="pc-desc">Everything you need for complete digital domination — website, social, ads, and strategy.</p>
+            <ul class="pc-features">
+              <li>✓ Growth Website</li>
+              <li>✓ Premium Social Media</li>
+              <li>✓ Full Ads Management</li>
+              <li>✓ Monthly Strategy Meetings</li>
+            </ul>
+            <div class="pc-savings">💰 Maximum growth package</div>
+            <a href="#contact" class="btn-ghost full">Book Consultation</a>
+          </div>
+        </div>
+        <div class="pricing-footer-note">
+          <p class="pfn-main">🚀 Bundles are customizable. <a href="#contact">Contact us</a> to build a plan tailored to your exact needs.</p>
         </div>
       </div>
 
@@ -681,176 +713,153 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       FAQ
-  ═══════════════════════════════════════ -->
+  <!-- ═══ BLOG ═══ -->
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Blog</span>
+        <h2 class="section-title">Marketing Insights for<br/><span>Local Businesses</span></h2>
+        <p class="section-sub">Actionable tips, strategies, and insights to help your business grow online.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card reveal">
+          <div class="blog-img"><div class="blog-img-placeholder"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="32" height="32" rx="4" stroke="#FFC200" stroke-width="1.5"/><path d="M4 28L12 20L18 26L26 16L36 28" stroke="#FFC200" stroke-width="1.5" stroke-linejoin="round"/></svg></div><span class="blog-category">Social Media</span></div>
+          <div class="blog-body"><div class="blog-meta"><span>📅 June 2026</span><span>⏱ 5 min read</span></div><h3>How Social Media Marketing Helps Local Businesses Grow in 2026</h3><p>Discover why Instagram, Facebook, and WhatsApp marketing have become essential for restaurants, clinics, gyms, and retail stores to drive revenue.</p><div class="blog-tags"><span>#SocialMedia</span><span>#LocalBusiness</span><span>#Ahmedabad</span></div><a href="#contact" class="blog-read-more">Read More <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </article>
+        <article class="blog-card reveal reveal-d1">
+          <div class="blog-img"><div class="blog-img-placeholder"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="4" width="28" height="34" rx="4" stroke="#FFC200" stroke-width="1.5"/><path d="M12 14H28M12 20H28M12 26H22" stroke="#FFC200" stroke-width="1.5" stroke-linecap="round"/></svg></div><span class="blog-category">Healthcare Marketing</span></div>
+          <div class="blog-body"><div class="blog-meta"><span>📅 May 2026</span><span>⏱ 6 min read</span></div><h3>Why Every Hospital &amp; Clinic Needs a Professional Website in 2026</h3><p>Patients search online before booking appointments. Learn how a professional website from ₹799/month builds trust and increases patient inquiries.</p><div class="blog-tags"><span>#Healthcare</span><span>#WebDesign</span><span>#HospitalMarketing</span></div><a href="#contact" class="blog-read-more">Read More <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </article>
+        <article class="blog-card reveal reveal-d2">
+          <div class="blog-img"><div class="blog-img-placeholder"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="4" y="4" width="14" height="14" rx="2" stroke="#FFC200" stroke-width="1.5"/><rect x="22" y="4" width="14" height="14" rx="2" stroke="#FFC200" stroke-width="1.5"/><rect x="4" y="22" width="14" height="14" rx="2" stroke="#FFC200" stroke-width="1.5"/><rect x="22" y="22" width="14" height="14" rx="2" stroke="#FFC200" stroke-width="1.5"/></svg></div><span class="blog-category">Instagram Marketing</span></div>
+          <div class="blog-body"><div class="blog-meta"><span>📅 April 2026</span><span>⏱ 7 min read</span></div><h3>Instagram Marketing Strategies That Actually Generate Customers in 2026</h3><p>Stop chasing followers. Learn the proven Instagram strategies that turn your profile into a customer acquisition machine.</p><div class="blog-tags"><span>#Instagram</span><span>#ContentStrategy</span><span>#LeadGeneration</span></div><a href="#contact" class="blog-read-more">Read More <svg width="14" height="14" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
   <section id="faq" class="faq-section">
     <div class="container">
       <div class="faq-layout">
         <div class="faq-left">
           <span class="section-label">FAQ</span>
           <h2 class="section-title">Questions?<br/><span>We've Got</span><br/>Answers.</h2>
-          <p class="section-sub">Still unsure? DM us "GROW" on Instagram and we'll answer everything personally.</p>
+          <p class="section-sub">Still unsure? DM us "GROW" on Instagram and we'll answer personally.</p>
           <a href="https://instagram.com/loopy_media_" target="_blank" class="btn-ghost">Chat on Instagram →</a>
         </div>
-
         <div class="faq-right">
           <div class="faq-item" data-faq>
-            <button class="faq-q">How soon will I see results?<span class="faq-icon">+</span></button>
-            <div class="faq-a"><p>Most clients see measurable improvements in engagement and reach within 30 days. Significant business results (leads, sales) typically take 60–90 days depending on your starting point and package.</p></div>
+            <button class="faq-q">What is the starting price for a website?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Our Starter Website plan begins at ₹799/month, which includes a 5-page mobile-responsive website, contact form, WhatsApp integration, basic SEO, free hosting, and monthly updates. A minimum 12-month commitment applies to website plans.</p></div>
           </div>
           <div class="faq-item" data-faq>
-            <button class="faq-q">Do I need to sign a long-term contract?<span class="faq-icon">+</span></button>
-            <div class="faq-a"><p>No. All our plans are month-to-month. We believe in earning your business every single month through results — not locking you in. Annual plans are available at a discount for those who want them.</p></div>
+            <button class="faq-q">Can I start with a small social media budget?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Absolutely. Our Starter Social plan begins at ₹1,999/month — 8 posts, graphic design, caption writing, hashtag research, and a monthly report. Perfect for new businesses taking their first step into social media marketing.</p></div>
           </div>
           <div class="faq-item" data-faq>
-            <button class="faq-q">What do I need to provide to get started?<span class="faq-icon">+</span></button>
-            <div class="faq-a"><p>Just your brand details, goals, and any existing assets (logo, photos). We handle the rest — strategy, content, design, posting, and reporting. If you need branding from scratch, we create that too.</p></div>
+            <button class="faq-q">How long does social media growth take?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Most clients see measurable improvements in engagement and reach within 30 days. Significant business results — leads and sales — typically take 60–90 days depending on your starting point and plan.</p></div>
           </div>
           <div class="faq-item" data-faq>
-            <button class="faq-q">Do you work with businesses outside Ahmedabad?<span class="faq-icon">+</span></button>
-            <div class="faq-a"><p>Absolutely! While we're based in Ahmedabad, we work with clients across India and internationally. All our services are delivered digitally with regular video call check-ins.</p></div>
+            <button class="faq-q">Do you run Meta Ads? What's the cost?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Yes! Our Digital Marketing plans start from ₹4,999/month for Meta Ads management. The management fee covers campaign setup, creative support, audience research, and reporting. Ad spend (your Meta/Google budget) is separate and billed directly to you.</p></div>
           </div>
           <div class="faq-item" data-faq>
-            <button class="faq-q">What makes you different from other agencies?<span class="faq-icon">+</span></button>
-            <div class="faq-a"><p>We're obsessively focused on revenue, not vanity metrics. You'll get a dedicated account manager, weekly reports tied to business outcomes, and a team that treats your brand like their own.</p></div>
+            <button class="faq-q">Do you work with local businesses like clinics, restaurants, gyms?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Yes — local businesses are our specialty! Our Business Website plan at ₹1,499/month is specifically designed for clinics, cafes, gyms, and local businesses. We also have tailored social media packages for each industry.</p></div>
+          </div>
+          <div class="faq-item" data-faq>
+            <button class="faq-q">What are the bundle packages?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><p>Our bundles combine website + social media + ads into one affordable plan. The Business Growth Bundle starts at ₹5,999/month, the Complete Growth Bundle at ₹9,999/month (most popular), and the Ultimate Digital Growth at ₹19,999/month — all customizable to your needs.</p></div>
           </div>
           <div class="faq-item" data-faq>
             <button class="faq-q">Is the free audit really free?<span class="faq-icon">+</span></button>
-            <div class="faq-a"><p>100% free, no catch. We audit your Instagram, website (if you have one), and overall brand positioning — then give you a detailed report with actionable recommendations. DM "GROW" on Instagram to claim yours.</p></div>
+            <div class="faq-a"><p>100% free, no catch. We audit your Instagram, website, and brand positioning — then deliver a detailed report with actionable recommendations. DM "GROW" on Instagram or fill in the form below.</p></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       CTA / CONTACT — Form + Calendly
-  ═══════════════════════════════════════ -->
+  <!-- ═══ CONTACT ═══ -->
   <section id="contact" class="cta-section">
-    <div class="cta-bg-rings">
-      <div class="cta-ring ctr-1"></div>
-      <div class="cta-ring ctr-2"></div>
-    </div>
+    <div class="cta-bg-rings"><div class="cta-ring ctr-1"></div><div class="cta-ring ctr-2"></div></div>
     <div class="container">
       <div class="cta-content">
         <span class="section-label">Let's Work Together</span>
         <h2 class="cta-title">Ready to Enter<br/>the <span>Growth Loop?</span></h2>
         <p class="cta-sub">Fill in your details OR book a call directly from our calendar — your choice.</p>
+        <!-- Pricing reminder above form -->
+        <div class="cta-pricing-reminder">
+          <span>🌐 Websites from ₹799/mo</span>
+          <span>·</span>
+          <span>📱 Social Media from ₹1,999/mo</span>
+          <span>·</span>
+          <span>🎯 Ads from ₹4,999/mo</span>
+        </div>
 
         <div class="contact-grid">
-          <!-- LEFT: Form -->
           <div class="contact-col">
-            <div class="contact-col-head">
-              <span class="cc-num">01</span>
-              <h3>Tell Us About Your Brand</h3>
-            </div>
+            <div class="contact-col-head"><span class="cc-num">01</span><h3>Get Your Free Audit</h3></div>
             <div class="contact-form-wrap">
-              <div class="cf-row">
-                <div class="cf-group">
-                  <label for="cf-name">Your Name</label>
-                  <input type="text" id="cf-name" placeholder="Rahul Kapoor" autocomplete="name"/>
-                </div>
-                <div class="cf-group">
-                  <label for="cf-business">Business Name</label>
-                  <input type="text" id="cf-business" placeholder="Kapoor Kitchen"/>
-                </div>
+              <div class="cf-group"><label for="cf-name">Full Name</label><input type="text" id="cf-name" placeholder="Rahul Kapoor" autocomplete="name"/></div>
+              <div class="cf-group"><label for="cf-phone">WhatsApp Number</label><input type="tel" id="cf-phone" placeholder="+91 98765 43210" autocomplete="tel"/></div>
+              <div class="cf-group">
+                <label for="cf-type">Business Type</label>
+                <select id="cf-type">
+                  <option value="">Select your business type</option>
+                  <option>Clinic / Hospital</option>
+                  <option>Restaurant / Cafe</option>
+                  <option>Gym / Fitness Center</option>
+                  <option>Educational Institute</option>
+                  <option>Retail / Local Store</option>
+                  <option>Service-Based Business</option>
+                  <option>Startup</option>
+                  <option>Other</option>
+                </select>
               </div>
-              <div class="cf-row">
-                <div class="cf-group">
-                  <label for="cf-phone">WhatsApp Number</label>
-                  <input type="tel" id="cf-phone" placeholder="+91 98765 43210" autocomplete="tel"/>
-                </div>
-                <div class="cf-group">
-                  <label for="cf-service">Service Needed</label>
-                  <select id="cf-service">
-                    <option value="">Select a service</option>
-                    <option>Social Media Management</option>
-                    <option>Website Design</option>
-                    <option>Branding</option>
-                    <option>Content Creation</option>
-                    <option>Paid Ads</option>
-                    <option>Full Growth Package</option>
-                    <option>Free Audit Only</option>
-                  </select>
-                </div>
-              </div>
-              <div class="cf-group full-width">
-                <label for="cf-msg">Tell us about your brand</label>
-                <textarea id="cf-msg" rows="3" placeholder="We're a local restaurant in Ahmedabad..."></textarea>
-              </div>
-              <button class="btn-primary full" id="cfSubmit" onclick="handleFormSubmit()">
-                Send Message
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-              <div class="cf-success" id="cfSuccess">
-                ✅ Message sent! We'll reach out within 24 hours.
-              </div>
+              <div class="cf-group"><label for="cf-msg">Message (Optional)</label><textarea id="cf-msg" rows="3" placeholder="Tell us a bit about your business or what you're looking for…"></textarea></div>
+              <button class="btn-primary full" id="cfSubmit" onclick="handleFormSubmit()">Claim Free Audit <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <div class="cf-success" id="cfSuccess">✅ Message sent! We'll reach out within 24 hours on WhatsApp.</div>
+              <p class="cf-note">🔒 No spam. No obligation. Just a free, valuable audit.</p>
             </div>
           </div>
-
-          <!-- RIGHT: Calendly -->
           <div class="contact-col contact-col-calendly">
-            <div class="contact-col-head">
-              <span class="cc-num">02</span>
-              <h3>Book a Free 30-Min Call</h3>
-            </div>
+            <div class="contact-col-head"><span class="cc-num">02</span><h3>Book a Free 30-Min Call</h3></div>
             <p class="cc-sub">Pick a time that works for you — we'll call you and audit your brand live.</p>
-
-            <!-- Calendly Inline Widget -->
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/harshahuja24105/30min?hide_gdpr_banner=1&background_color=181818&text_color=f5f0e8&primary_color=ffc200"
-                 style="min-width:280px;height:520px;"></div>
-
-            <!-- Fallback open in new tab -->
-            <button class="btn-ghost full" onclick="Calendly.initPopupWidget({url:'https://calendly.com/your-username/30min'});return false;">
-              Open Full Calendar →
-            </button>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/harshahuja24105/30min?hide_gdpr_banner=1&background_color=181818&text_color=f5f0e8&primary_color=ffc200" style="min-width:280px;height:520px;"></div>
+            <button class="btn-ghost full" onclick="Calendly.initPopupWidget({url:'https://calendly.com/harshahuja24105/30min'});return false;">Open Full Calendar →</button>
           </div>
         </div>
 
         <div class="cta-alts">
-          <a href="https://instagram.com/loopy_media_" target="_blank" class="cta-alt-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            DM on Instagram
-          </a>
-          <a href="https://wa.me/919484882220?text=GROW" target="_blank" class="cta-alt-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            WhatsApp Us
-          </a>
+          <a href="https://instagram.com/loopy_media_" target="_blank" class="cta-alt-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>DM on Instagram</a>
+          <a href="https://wa.me/919484882220?text=Hi%20Loopy%20Media%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business." target="_blank" class="cta-alt-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp Us</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════ -->
+  <!-- ═══ FOOTER ═══ -->
   <footer id="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#hero" class="nav-logo">
-            <div class="logo-mark">
-              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22" cy="22" r="22" fill="#FFC200"/>
-                <path d="M22 10C15.373 10 10 15.373 10 22C10 28.627 15.373 34 22 34C28.627 34 34 28.627 34 22" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round"/>
-                <path d="M34 22C34 18.686 31.314 16 28 16C24.686 16 22 18.686 22 22C22 25.314 24.686 28 28 28" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round"/>
-              </svg>
-            </div>
+            <div class="logo-mark"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="22" fill="#FFC200"/><path d="M22 10C15.373 10 10 15.373 10 22C10 28.627 15.373 34 22 34C28.627 34 34 28.627 34 22" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round"/><path d="M34 22C34 18.686 31.314 16 28 16C24.686 16 22 18.686 22 22C22 25.314 24.686 28 28 28" stroke="#0A0A0A" stroke-width="2.5" stroke-linecap="round"/></svg></div>
             <span class="logo-text">LOOPY <span>MEDIA</span></span>
           </a>
           <p class="footer-tagline">Step into the loop of GROWTH. Helping businesses turn content into sales — one loop at a time.</p>
+          <div class="footer-pricing-pills">
+            <span>🌐 Websites from ₹799/mo</span>
+            <span>📱 Social from ₹1,999/mo</span>
+          </div>
           <div class="footer-socials">
-            <a href="https://instagram.com/loopy_media_" target="_blank" aria-label="Instagram">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>
-            <a href="https://wa.me/919484882220" target="_blank" aria-label="WhatsApp">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            </a>
+            <a href="https://instagram.com/loopy_media_" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://wa.me/919484882220" target="_blank" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
           </div>
         </div>
-
         <div class="footer-links-group">
           <h5>Services</h5>
           <ul>
@@ -861,75 +870,55 @@
             <li><a href="#services">Paid Ads</a></li>
           </ul>
         </div>
-
         <div class="footer-links-group">
-          <h5>Company</h5>
+          <h5>Pricing</h5>
           <ul>
-            <li><a href="#why">Why Loopy Media</a></li>
-            <li><a href="#process">Our Process</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#pricing">Websites from ₹799/mo</a></li>
+            <li><a href="#pricing">Social from ₹1,999/mo</a></li>
+            <li><a href="#pricing">Ads from ₹4,999/mo</a></li>
+            <li><a href="#pricing">Bundle Packages</a></li>
+            <li><a href="#contact">Custom Plan</a></li>
           </ul>
         </div>
-
         <div class="footer-links-group">
           <h5>Contact</h5>
           <ul>
             <li><a href="https://instagram.com/loopy_media_" target="_blank">@loopy_media_</a></li>
-            <li><a href="https://wa.me/919484882220">WhatsApp</a></li>
+            <li><a href="https://wa.me/919484882220?text=Hi%20Loopy%20Media%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business.">WhatsApp</a></li>
             <li><a href="mailto:hello@loopymedia.in">hello@loopymedia.in</a></li>
             <li><span>📍 Ahmedabad, Gujarat</span></li>
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>© 2025 Loopy Media. All rights reserved. Built to grow. 🔁</p>
+        <p>© 2026 Loopy Media. All rights reserved. Built to grow. 🔁</p>
         <p>Made with ❤️ in Ahmedabad</p>
       </div>
     </div>
   </footer>
 
-  <!-- ═══════════════════════════════════════
-       FLOATING WHATSAPP BUTTON
-  ═══════════════════════════════════════ -->
-  <a href="https://wa.me/919484882220?text=Hi%20Loopy%20Media%2C%20I%20want%20a%20free%20audit%20%E2%80%94%20GROW" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-    </svg>
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919484882220?text=Hi%20Loopy%20Media%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business." target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
     <span class="wa-pulse"></span>
-    <span class="wa-tooltip">Chat with us</span>
+    <span class="wa-tooltip">Free Audit on WhatsApp</span>
   </a>
 
-  <!-- ═══════════════════════════════════════
-       AUDIT POPUP (auto after 10s)
-  ═══════════════════════════════════════ -->
+  <!-- Audit Popup -->
   <div class="audit-modal" id="auditModal">
     <div class="am-backdrop" id="amBackdrop"></div>
     <div class="am-box">
       <button class="am-close" id="amClose" aria-label="Close">×</button>
       <div class="am-badge">🎁 LIMITED TIME</div>
       <h3>Get a <span>FREE Brand Audit</span></h3>
-      <p>Worth ₹5,000 — yours free. We'll analyze your Instagram, website &amp; brand positioning and send you a detailed action plan in 48 hours.</p>
-
-      <ul class="am-list">
-        <li>✓ Instagram &amp; Social Audit</li>
-        <li>✓ Website Performance Review</li>
-        <li>✓ Competitor Comparison</li>
-        <li>✓ Actionable Growth Plan</li>
-      </ul>
-
+      <p>Worth ₹5,000 — yours free. We'll analyze your Instagram, website &amp; brand positioning and deliver a detailed action plan in 48 hours.</p>
+      <ul class="am-list"><li>✓ Instagram &amp; Social Audit</li><li>✓ Website Performance Review</li><li>✓ Competitor Comparison</li><li>✓ Actionable Growth Plan</li></ul>
       <div class="am-form">
         <input type="text" id="amName" placeholder="Your Name"/>
         <input type="tel" id="amPhone" placeholder="WhatsApp Number"/>
         <button class="btn-primary full" onclick="handleAuditSubmit()">Claim My Free Audit →</button>
       </div>
-
-      <div class="am-success" id="amSuccess">
-        ✅ Awesome! Check WhatsApp — we'll reach out shortly.
-      </div>
-
+      <div class="am-success" id="amSuccess">✅ Awesome! Check WhatsApp — we'll reach out shortly.</div>
       <p class="am-note">🔒 No spam. No obligation. Just value.</p>
     </div>
   </div>

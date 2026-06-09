@@ -1,6 +1,28 @@
+# Loopy Media - https://loopymedia.in
+# Social Media Marketing Agency, Ahmedabad
+
 User-agent: *
 Allow: /
+Allow: /blogs/
+Allow: /portfolio/
+Allow: /images/
+Disallow: /scratch/
+Disallow: /*.json$
 
+# Search Engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 3
+
+# AI Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -16,10 +38,11 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Googlebot
+User-agent: Google-Extended
 Allow: /
 
-User-agent: Bingbot
-Allow: /
-
+# Sitemap
 Sitemap: https://loopymedia.in/sitemap.xml
+
+# Host
+Host: https://loopymedia.in

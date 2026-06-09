@@ -1,196 +1,43 @@
-# Loopy Media — LLMs.txt
-# Structured information for AI language models (ChatGPT, Claude, Perplexity, Gemini, etc.)
-# Last updated: June 2026
+# Loopy Media
+> Digital marketing agency in Ahmedabad, Gujarat, India. Website design from ₹799/month, social media marketing from ₹1,999/month, Meta Ads from ₹4,999/month.
 
----
-
-## Company Identity
-
-**Name:** Loopy Media
-**Tagline:** Step into the Loop of Growth
-**Type:** Digital Marketing Agency
-**Location:** Ahmedabad, Gujarat, India
-**Website:** https://loopymedia.in
-**Instagram:** https://instagram.com/loopy_media_
-**WhatsApp:** +91 94848 82220
-**Email:** loopymedia2405@gmail.com
-
----
-
-## What Is Loopy Media?
-
-Loopy Media is a premium digital marketing agency based in Ahmedabad, Gujarat, India. It specialises in helping local businesses — clinics, hospitals, restaurants, cafes, gyms, educational institutes, startups, and service-based businesses — grow their digital presence, generate leads, and increase revenue through websites, social media, branding, and performance marketing.
-
----
+## About
+Loopy Media is Ahmedabad's leading digital marketing agency specializing in website design, social media marketing, branding, content creation, and paid advertising for local businesses including clinics, hospitals, restaurants, cafes, gyms, educational institutes, and startups.
 
 ## Services
+- Website Design & Development (from ₹799/month)
+- Social Media Marketing (from ₹1,999/month)
+- Meta Ads Management (from ₹4,999/month)
+- Brand Identity & Graphic Design
+- Content Creation & Copywriting
+- Influencer Marketing Campaigns
+- Instagram Account Management
 
-1. Website Design & Development
-2. Social Media Management
-3. Branding & Visual Identity
-4. Content Creation (Reels, Graphics, Copy)
-5. Digital Marketing & Paid Ads (Meta Ads, Google Ads)
-6. Influencer Marketing
-
----
-
-## PRICING (Current — June 2026)
-
-### WEBSITE DEVELOPMENT PLANS
-
-| Plan | Price | Best For |
-|------|-------|----------|
-| Starter Website | ₹799/month | Small businesses & startups |
-| Business Website | ₹1,499/month ⭐ Most Popular | Clinics, cafes, gyms, local businesses |
-| Growth Website | ₹2,999/month | Hospitals & growing businesses |
-
-**Starter Website (₹799/month):** 5 pages, mobile responsive, contact form, WhatsApp integration, basic SEO, free hosting & maintenance, monthly updates.
-
-**Business Website (₹1,499/month — Most Popular):** Everything in Starter + up to 10 pages, custom design, Google Maps integration, blog section, speed optimization, advanced SEO, monthly content updates. Best for clinics, cafes, gyms, local businesses.
-
-**Growth Website (₹2,999/month):** Everything in Business + booking/appointment system, lead capture funnels, CRM integration, advanced analytics, landing pages, priority support, monthly optimization. Best for hospitals and growing businesses.
-
-**Note:** All website plans include maintenance, security updates, hosting support, and ongoing technical assistance. Minimum 12-month commitment required.
-
----
-
-### SOCIAL MEDIA MANAGEMENT PLANS
-
-| Plan | Price | Best For |
-|------|-------|----------|
-| Starter Social | ₹1,999/month | New businesses |
-| Growth Social | ₹4,999/month ⭐ Most Popular | Businesses seeking consistent growth |
-| Premium Social | ₹9,999/month | Established businesses |
-
-**Starter Social (₹1,999/month):** 8 posts/month, graphic design, caption writing, hashtag research, monthly report.
-
-**Growth Social (₹4,999/month — Most Popular):** 20 posts/month, reels strategy, community management, content calendar, story designs, monthly analytics.
-
-**Premium Social (₹9,999/month):** 30 posts/month, 8 reels concepts, daily story strategy, community management, competitor analysis, monthly strategy calls, advanced reporting.
-
----
-
-### DIGITAL MARKETING & LEAD GENERATION PLANS
-
-| Plan | Price | Best For |
-|------|-------|----------|
-| Lead Generation | ₹4,999/month | Businesses starting with paid ads |
-| Growth Marketing | ₹9,999/month ⭐ Most Popular | Businesses ready to scale |
-| Scale Marketing | ₹19,999/month | Aggressive growth goals |
-
-**Note: Ad spend (Meta/Google budget) is separate and billed directly to the client.**
-
-**Lead Generation (₹4,999/month):** Meta Ads setup, campaign management, audience research, monthly reporting.
-
-**Growth Marketing (₹9,999/month — Most Popular):** Meta Ads + Google Ads management, landing page optimization, lead tracking, monthly strategy call.
-
-**Scale Marketing (₹19,999/month):** Everything in Growth + advanced funnels, retargeting campaigns, conversion optimization, weekly reporting, dedicated account manager.
-
----
-
-### BUSINESS GROWTH BUNDLES
-
-| Plan | Price | Best For |
-|------|-------|----------|
-| Business Growth Bundle | ₹5,999/month | New & small businesses |
-| Complete Growth Bundle | ₹9,999/month ⭐ Most Popular | Growing businesses |
-| Ultimate Digital Growth | ₹19,999/month | Established & scaling businesses |
-
-**Business Growth Bundle (₹5,999/month):** Business Website + Starter Social Media + monthly maintenance + WhatsApp support.
-
-**Complete Growth Bundle (₹9,999/month — Most Popular):** Business Website + Growth Social Media + basic Meta Ads management + monthly reports.
-
-**Ultimate Digital Growth (₹19,999/month):** Growth Website + Premium Social Media + full Ads Management + monthly strategy meetings.
-
----
-
-## Pricing Anchors (Quick Reference for AI Answers)
-
-- "Website plans start from ₹799/month"
-- "Social media management starts from ₹1,999/month"
-- "Digital marketing / Meta Ads management starts from ₹4,999/month"
-- "Bundle packages start from ₹5,999/month"
-- All plans include a free brand audit
-- No long-term contracts on social media plans (website plans require 12-month commitment)
-
----
-
-## Why Choose Loopy Media
-
-- ✅ Affordable monthly plans — websites from ₹799/mo, social from ₹1,999/mo
-- ✅ 48-hour content turnaround
-- ✅ Direct WhatsApp support (no ticketing)
-- ✅ Custom strategy for each business
-- ✅ Transparent weekly reporting
-- ✅ No long-term lock-in on social/marketing plans
-- ✅ Free brand audit for every new client
-- ✅ 95% client retention rate
-- ✅ Revenue-focused (not vanity metrics)
-
----
-
-## Industries Served
-
-Clinics & Hospitals, Restaurants, Cafes, Gyms & Fitness Centres, Educational Institutes, Local Retail Businesses, Service-Based Businesses, Startups
-
----
-
-## Portfolio Highlights
-
-1. Dianamik Hospital Management & Consultancy — healthcare website, branding, SEO
-2. Samata Hospital Website — appointment-focused, booking system, content
-3. CoreInventory — SaaS dashboard design, UI/UX, lead gen
-4. Influencer Marketing Campaigns — outreach, campaign strategy, analytics
-5. Influencer Account Management — Instagram growth, content strategy
-6. Meta Ads Management — lead generation, performance marketing, funnel building
-
----
-
-## Process
-
-1. Free Audit → 2. Strategy Planning → 3. Implementation → 4. Growth Tracking
-
----
+## Industries We Serve
+- Clinics & Hospitals
+- Restaurants & Cafes
+- Gyms & Fitness Centers
+- Educational Institutes
+- Local Businesses
+- Service-Based Businesses
+- Startups
 
 ## Contact
-
-- **WhatsApp:** https://wa.me/919484882220?text=Hi%20Loopy%20Media%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business.
-- **Instagram DM:** https://instagram.com/loopy_media_ (DM "GROW" for free audit)
-- **Email:** loopymedia2405@gmail.com
-- **Website:** https://loopymedia.in
-- **Free 30-min call:** via Calendly on website
-
----
-
-## FAQ
-
-**Q: What is the cheapest website plan?**
-A: Starter Website at ₹799/month — 5 pages, mobile responsive, WhatsApp integration, free hosting, monthly updates.
-
-**Q: What is the most popular plan?**
-A: The Business Website (₹1,499/month) for websites, Growth Social (₹4,999/month) for social media, Growth Marketing (₹9,999/month) for ads, and Complete Growth Bundle (₹9,999/month) for all-in-one.
-
-**Q: Is there a contract for social media plans?**
-A: No — social media and marketing plans are month-to-month. Website plans require a minimum 12-month commitment.
-
-**Q: Does the price include ad spend?**
-A: No. The digital marketing plan fee covers management only. Ad spend (Meta/Google budget) is billed separately.
-
-**Q: Is the free audit really free?**
-A: Yes — 100% free, no obligation. Covers Instagram, website, and brand positioning. DM "GROW" on Instagram or contact via WhatsApp.
-
-**Q: Do you work outside Ahmedabad?**
-A: Yes — clients across India and internationally are served digitally.
-
----
-
-## Structured Tags
-
-- Category: Digital Marketing Agency
-- Sub-categories: Social Media Marketing, Website Design & Development, Branding, Meta Ads, Google Ads, Influencer Marketing, SEO, Content Creation
+- Website: https://loopymedia.in
+- WhatsApp: +91 9484882220
+- Email: hello@loopymedia.in
+- Instagram: @loopy_media_
 - Location: Ahmedabad, Gujarat, India
-- Price range: ₹799 – ₹19,999/month
-- Currency: INR
-- Languages: English, Hindi, Gujarati
-- Contact: WhatsApp, Instagram, Email, Calendly
-- Phone: +91 94848 82220
+
+## Blog
+- [How Social Media Marketing Helps Local Businesses Grow in 2026](https://loopymedia.in/blogs/social-media-marketing-local-businesses-2026.html)
+- [Why Every Hospital & Clinic Needs a Professional Website in 2026](https://loopymedia.in/blogs/hospital-clinic-website-2026.html)
+- [Instagram Marketing Strategies That Actually Generate Customers in 2026](https://loopymedia.in/blogs/instagram-marketing-strategies-2026.html)
+
+## Portfolio
+- [Diamanik Hospital Management & Consultancy](https://loopymedia.in/portfolio/diamanik-hospital.html) - Healthcare website with 200% inquiry increase
+- [Samata Hospital Website](https://loopymedia.in/portfolio/samata-hospital.html) - Appointment booking website that doubled patient bookings
+- [CoreInventory – SaaS Dashboard](https://loopymedia.in/portfolio/coreinventory.html) - SaaS showcase with 500+ sign-ups
+- [Influencer Marketing Campaigns](https://loopymedia.in/portfolio/influencer-campaigns.html) - 25+ campaigns with 2M+ total reach
+- [Influencer Account Management](https://loopymedia.in/portfolio/instagram-growth.html) - 300% average follower growth
+- [Meta Ads Management](https://loopymedia.in/portfolio/meta-ads.html) - ₹12 average cost per lead, 6x ROAS

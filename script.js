@@ -344,20 +344,39 @@ function handleFormSubmit() {
   if (!phone.value.trim()) { shakeInput(phone); phone.focus(); return; }
 
   const bizType = type && type.value ? type.value : 'Not specified';
-  const note    = msg && msg.value.trim() ? '\nMessage: ' + msg.value.trim() : '';
-  const text    = encodeURIComponent(
-    `Hi Loopy Media, I'd like a free audit for my business.\n\nName: ${name.value.trim()}\nWhatsApp: ${phone.value.trim()}\nBusiness Type: ${bizType}${note}`
-  );
+  const note    = msg && msg.value.trim() ? msg.value.trim() : 'No additional message';
 
-  btn.textContent = 'Opening WhatsApp…';
+  btn.textContent = 'Sending...';
   btn.disabled = true;
 
-  setTimeout(() => {
-    window.open('https://wa.me/919484882220?text=' + text, '_blank');
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+      access_key: '4d700f33-0b33-4cb1-9701-76c932310117',
+      subject: 'New Lead from Loopy Media Website',
+      from_name: 'Loopy Media Website',
+      name: name.value.trim(),
+      whatsapp: phone.value.trim(),
+      business_type: bizType,
+      message: note
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
     btn.style.display = 'none';
     if (succ) succ.classList.add('show');
     ['cf-name','cf-phone','cf-type','cf-msg'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
-  }, 600);
+  })
+  .catch(error => {
+    console.error('Error submitting form:', error);
+    btn.textContent = 'Submit';
+    btn.disabled = false;
+    alert("Something went wrong. Please try again.");
+  });
 }
 
 function shakeInput(el) {
@@ -407,18 +426,43 @@ function handleAuditSubmit() {
   const name  = document.getElementById('amName');
   const phone = document.getElementById('amPhone');
   const succ  = document.getElementById('amSuccess');
+  const btn   = document.querySelector('#auditModal .btn-primary');
+  
   if (!name || !phone) return;
   if (!name.value.trim())  { shakeInput(name);  name.focus();  return; }
   if (!phone.value.trim()) { shakeInput(phone); phone.focus(); return; }
 
-  const text = encodeURIComponent(`Hi Loopy Media, I'd like a free audit for my business.\nName: ${name.value.trim()}\nPhone: ${phone.value.trim()}`);
-  window.open('https://wa.me/919484882220?text=' + text, '_blank');
-  if (succ) succ.classList.add('show');
-  name.value = ''; phone.value = '';
-  setTimeout(() => {
-    const modal = document.getElementById('auditModal');
-    if (modal) { modal.classList.remove('show'); document.body.style.overflow = ''; sessionStorage.setItem('auditDismissed','1'); }
-  }, 2500);
+  if (btn) { btn.textContent = 'Sending...'; btn.disabled = true; }
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+      access_key: '4d700f33-0b33-4cb1-9701-76c932310117',
+      subject: 'New Audit Request from Popup',
+      from_name: 'Loopy Media Website',
+      name: name.value.trim(),
+      whatsapp: phone.value.trim(),
+      message: 'User requested a free audit via the popup modal.'
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (succ) succ.classList.add('show');
+    name.value = ''; phone.value = '';
+    setTimeout(() => {
+      const modal = document.getElementById('auditModal');
+      if (modal) { modal.classList.remove('show'); document.body.style.overflow = ''; sessionStorage.setItem('auditDismissed','1'); }
+    }, 2500);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    if (btn) { btn.textContent = 'Claim My Free Audit →'; btn.disabled = false; }
+    alert("Something went wrong. Please try again.");
+  });
 }
 
 /* ─────────────────────────────────────

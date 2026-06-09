@@ -1,4 +1,4 @@
-# Loopy Media - https://loopymedia.in
+# Loopy Media - https://loopy-media.pages.dev
 # Social Media Marketing Agency, Ahmedabad
 
 User-agent: *
@@ -42,7 +42,7 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap
-Sitemap: https://loopymedia.in/sitemap.xml
+Sitemap: https://loopy-media.pages.dev/sitemap.xml
 
 # Host
-Host: https://loopymedia.in
+Host: https://loopy-media.pages.dev

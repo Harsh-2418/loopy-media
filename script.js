@@ -580,3 +580,73 @@ document.addEventListener("DOMContentLoaded", () => {
 
   startSlider();
 });
+
+/* ─────────────────────────────────────
+   16. PORTFOLIO SCREENSHOT SLIDER
+───────────────────────────────────── */
+(function initScreenshotSlider() {
+  const slider = document.getElementById('pdScreenshotSlider');
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll('.pd-ss-slide');
+  const dots = slider.querySelectorAll('.pd-ss-dot');
+  const prevBtn = slider.querySelector('.pd-ss-prev');
+  const nextBtn = slider.querySelector('.pd-ss-next');
+  if (!slides.length) return;
+
+  let current = 0;
+
+  function goTo(index) {
+    slides[current].classList.remove('pd-ss-active');
+    if (dots.length > 0) dots[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('pd-ss-active');
+    if (dots.length > 0) dots[current].classList.add('active');
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goTo(parseInt(dot.dataset.slide)));
+  });
+
+  if (prevBtn) prevBtn.addEventListener('click', () => goTo(current - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goTo(current + 1));
+})();
+
+/* ─────────────────────────────────────
+   17. PORTFOLIO CARD IMAGE SLIDERS (auto-rotating)
+───────────────────────────────────── */
+(function initCardSliders() {
+  document.querySelectorAll('.pc-slider').forEach(slider => {
+    const slides = slider.querySelectorAll('.pc-slide');
+    const dots = slider.querySelectorAll('.pc-slider-dot');
+    if (slides.length < 2) return;
+
+    let current = 0;
+    let interval;
+
+    function goTo(idx) {
+      slides[current].classList.remove('pc-slide-active');
+      if (dots.length > 0) dots[current].classList.remove('active');
+      current = (idx + slides.length) % slides.length;
+      slides[current].classList.add('pc-slide-active');
+      if (dots.length > 0) dots[current].classList.add('active');
+    }
+
+    function start() { interval = setInterval(() => goTo(current + 1), 3000); }
+    function stop() { clearInterval(interval); }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', e => {
+        e.stopPropagation();
+        stop();
+        goTo(parseInt(dot.dataset.idx));
+        start();
+      });
+    });
+
+    slider.addEventListener('mouseenter', stop);
+    slider.addEventListener('mouseleave', start);
+
+    start();
+  });
+})();
